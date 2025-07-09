@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guarapari, um paraíso turístico no Espírito Santo com belas praias e atrações incríveis para toda a família.">
+    <meta name="keywords" content="Guarapari, turismo, praias, Espírito Santo, atrações turísticas, viagem, férias">
+    <meta name="author" content="Sua Empresa">
+    <meta property="og:title" content="Guarapari - O Paraíso do Espírito Santo">
+    <meta property="og:description" content="Venha conhecer Guarapari, com suas belas praias e turismo de excelência. Saiba mais sobre as atrações turísticas, hospedagem e muito mais!">
+    <meta property="og:image" content="URL_da_imagem_de_preview.jpg">
+    <meta property="og:url" content="https://www.seusite.com.br">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guarapari - O Paraíso do Espírito Santo">
+    <meta name="twitter:description" content="Descubra o melhor de Guarapari, com praias deslumbrantes e atrações turísticas únicas!">
+    <meta name="twitter:image" content="URL_da_imagem_de_preview.jpg">
+    <meta name="twitter:site" content="@seuusuario">
+    <meta name="favicon" content="favicon.ico">
+    <title>Guarapari - O Paraíso do Espírito Santo</title>
+
+    <!-- CSS interno -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #218838;
+        }
+
+        /* Slide de imagens */
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        .slider-images {
+            display: none;
+        }
+
+        .slider-images img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Botões de navegação */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Botão flutuante do Airbnb */
+        .airbnb-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF5A5F;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .airbnb-btn:hover {
+            background-color: #FF3C45;
+        }
+
+        /* A seção do conteúdo geral */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .special-message {
+            background-color: #222;
+            color: #ff9800;
+            font-size: 1.2em;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .special-message span {
+            font-weight: bold;
+        }
+
+        /* Notícias */
+        .news-container {
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-container h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guarapari - O Paraíso do Espírito Santo</h1>
+</header>
+
+<main>
+    <!-- Seção do Slide -->
+    <section class="slider-container">
+        <!-- Slides de Imagens -->
+        <div class="slider-images">
+            <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" alt="Praia de Guarapari">
+        </div>
+        <div class="slider-images">
+            <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" alt="Praia do Morro">
+        </div>
+        <div class="slider-images">
+            <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" alt="Roteiro Turístico">
+        </div>
+
+        <!-- Botões de navegação -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <section class="content-section">
+        <h2>Por que Visitar Guarapari?</h2>
+        <p>Guarapari é uma cidade encantadora localizada no Espírito Santo, famosa por suas belas praias, águas cristalinas e rica cultura local. Se você busca um lugar para relaxar ou para se aventurar, Guarapari oferece experiências para todos os gostos.</p>
+        <div class="cta">
+           <a href="https://wa.me/5527999497001" target="_blank" class="whatsapp-btn"> TENHO INTERESSE NO APARTAMENTO</a>
+        </div>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section class="news-container" id="news-section">
+        <h2>Últimas Notícias sobre Guarapari</h2>
+        <!-- Notícias serão inseridas aqui pelo JavaScript -->
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Sua Empresa - Todos os direitos reservados</p>
+    <p>Entre em contato: <strong>2799986-0405</strong> (SMS ou WhatsApp)</p>
+</footer>
+
+<!-- Mensagem especial com código aleatório -->
+<div class="special-message">
+    <p>🔐 <span id="innovation-code"></span> | Conquiste a Performance Máxima! 🌐 🚀</p>
+    <p>💡 Utilize nossos serviços e desbloqueie o futuro da hospedagem dedicada com recursos incríveis! 🔥</p>
+</div>
+
+<!-- Botão flutuante do Airbnb -->
+<a href="https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g" target="_blank" class="airbnb-btn">Ganhe dinheiro com airbnb</a>
+
+<!-- JavaScript para controle do slide e dinamismo das notícias -->
+<script>
+    // Array de notícias
+    const noticias = [
+        {
+            titulo: "Guarapari Lança Novo Projeto de Turismo Sustentável",
+            descricao: "Conheça as iniciativas da cidade para promover um turismo mais responsável e sustentável para todos.",
+            link: "#"
+        },
+        {
+            titulo: "Novas Atrações Turísticas em Guarapari em 2025",
+            descricao: "Guarapari se prepara para lançar novas atrações turísticas para encantar ainda mais seus visitantes.",
+            link: "#"
+        },
+        {
+            titulo: "Como Guarapari Está Se Tornando um Destino Popular de Férias",
+            descricao: "A cidade cresce em popularidade como destino turístico, atraindo mais visitantes todos os anos.",
+            link: "#"
+        }
+    ];
+
+    // Função para renderizar as notícias no HTML
+    const renderNoticias = () => {
+        const newsSection = document.getElementById('news-section');
+        noticias.forEach(noticia => {
+            const noticiaItem = document.createElement('div');
+            noticiaItem.classList.add('news-item');
+            noticiaItem.innerHTML = `
+                <a href="${noticia.link}">${noticia.titulo}</a>
+                <p>${noticia.descricao}</p>
+            `;
+            newsSection.appendChild(noticiaItem);
+        });
+    };
+
+    // Gerar código aleatório de letras e números
+    const gerarCodigoAleatorio = () => {
+        const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let codigo = '';
+        for (let i = 0; i < 8; i++) {
+            codigo += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+        return codigo;
+    };
+
+    // Exibir código aleatório na mensagem especial
+    document.getElementById('innovation-code').innerText = gerarCodigoAleatorio();
+
+    // Iniciar a renderização das notícias
+    renderNoticias();
+
+    // Função para controlar os slides
+    let slideIndex = 0;
+    showSlides();
+
+    function changeSlide(n) {
+        slideIndex += n;
+        showSlides();
+    }
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slider-images");
+        if (slideIndex >= slides.length) { slideIndex = 0 }
+        if (slideIndex < 0) { slideIndex = slides.length - 1 }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
